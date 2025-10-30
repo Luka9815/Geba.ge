@@ -109,20 +109,19 @@ nav a:hover {
    ========================== */
 
 .hero {
-  background-image: url("hero.png");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 60vh;
-  min-height: 420px;
-  padding: 0; /* clean section */
+  background: url("hero.png") top center no-repeat;
+  background-size: contain;   /* Prevents cropping */
+  
+  height: calc(1.5 * 120px);  /* ~1.5x header height (adjust if header changes) */
+  min-height: 260px;          /* ensures nice size on small screens */
+  
+  padding: 0;
+  margin: 0;
+
+  display: block;             /* no flex overlay */
 }
 
-.hero h2 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
-}
+
 header + .hero {
   margin-top: 0;
 }

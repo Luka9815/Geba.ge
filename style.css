@@ -111,14 +111,11 @@ nav a:hover {
 .hero {
   background-image: url("hero.png");
   background-size: cover;
-  background-position: center;
-  height: 55vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 60vh;
   min-height: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--white);
+  padding: 0; /* clean section */
 }
 
 .hero h2 {

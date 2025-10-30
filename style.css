@@ -36,9 +36,15 @@ header {
   background: var(--primary-dark);
   color: var(--white);
   padding: 10px 0;
-  position: relative; /* instead of sticky */
+  position: fixed;   /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+main {
+  padding-top: 100px; /* adjust depending on header height */
 }
 
 

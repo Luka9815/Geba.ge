@@ -266,4 +266,10 @@ section {
 html {
  scroll-behavior: smooth;
 } 
+/* Main page container spacing */
+section {
+  max-width: 1200px;
+  margin: 0 auto;      /* centers content */
+  padding: 40px 30px;  /* adds space on left & right */
+}
 

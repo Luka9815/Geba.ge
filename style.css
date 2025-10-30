@@ -44,6 +44,10 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
+main {
+  padding-top: 100px; /* adjust depending on header height */
+}
+
 
 
 header .container {
@@ -258,8 +262,8 @@ html {
 }
 /* Ensure anchor targets don't hide under header */
 section {
- /* scroll-margin-top: 120px; /* adjust height as needed */
-} */
+  scroll-margin-top: 120px; /* adjust height as needed */
+} 
 html {
  scroll-behavior: smooth;
 } 

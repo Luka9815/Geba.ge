@@ -318,4 +318,15 @@ section {
 .project-card .button:hover {
   background: #004f5a;
 }
+.lang-toggle img {
+  width: 26px;
+  height: auto;
+  display: inline-block;
+  border-radius: 3px;
+}
+.lang-toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 

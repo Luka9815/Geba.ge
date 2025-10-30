@@ -58,6 +58,31 @@ header .logo h1 {
   margin: 0;
   font-weight: 700;
 }
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-title h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.main-nav a {
+  white-space: nowrap;
+}
 
 nav {
   display: flex;
@@ -161,8 +186,8 @@ footer {
 
 .lang-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 14px;
+  right: 14px;
   background: rgba(255,255,255,0.9);
   backdrop-filter: blur(6px);
   border-radius: 12px;
@@ -170,7 +195,7 @@ footer {
   padding: 6px 10px;
   display: flex;
   gap: 6px;
-  z-index: 1000;
+  z-index: 2000;
   border: 1px solid #e6e6e9;
 }
 

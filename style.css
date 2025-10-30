@@ -102,6 +102,9 @@ nav a:hover {
   font-weight: 700;
   text-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
+header + .hero {
+  margin-top: 0;
+}
 
 /* ==========================
    CONTENT SECTIONS
@@ -204,4 +207,7 @@ footer {
     margin-right: 10px;
     font-size: 0.95rem;
   }
+}
+html {
+  scroll-behavior: smooth;
 }

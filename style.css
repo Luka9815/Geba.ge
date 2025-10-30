@@ -109,15 +109,14 @@ nav a:hover {
    ========================== */
 
 .hero {
-  background-image: url("hero.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: auto 240px; /* lock height only, keep original width ratio */
-
-  height: 240px; /* controls hero height */
   width: 100%;
-  display: block;
+  aspect-ratio: 4 / 1;  /* 16:4 ratio, scales perfectly */
+  background-image: url("hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 
 

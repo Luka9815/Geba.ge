@@ -272,4 +272,50 @@ section {
   margin: 0 auto;      /* centers content */
   padding: 40px 30px;  /* adds space on left & right */
 }
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 40px 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #005A70;
+  margin: 15px 10px 10px;
+}
+
+.project-card p {
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.project-card .button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #006d80;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-card .button:hover {
+  background: #004f5a;
+}
 

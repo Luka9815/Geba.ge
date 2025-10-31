@@ -329,4 +329,39 @@ section {
   gap: 8px;
   align-items: center;
 }
+.partners-list {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.partner-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.partner-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.partner-item a {
+  font-size: 18px;
+  color: var(--primary-dark, #004d5c);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.partner-item a:hover {
+  text-decoration: underline;
+  color: var(--primary, #007c89);
+}
 

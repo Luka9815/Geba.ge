@@ -426,4 +426,18 @@ section {
   border-radius: 10px;
   margin: 18px 0;
 }
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
 

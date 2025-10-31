@@ -1,6 +1,10 @@
 /* ==========================
    GLOBAL THEME
    ========================== */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --primary: #0a9396; /* Biotech teal */

@@ -364,4 +364,19 @@ section {
   text-decoration: underline;
   color: var(--primary, #007c89);
 }
+/* Project page content */
+.project-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.proj-img {
+  width: 100%;
+  max-width: 900px;
+  margin: 12px 0;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
 

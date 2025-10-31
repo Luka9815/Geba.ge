@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>12th Helmholtz Diabetes Conference | GEBA</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="lang-toggle">
+  <a href="news1.html" class="active"><img src="https://flagcdn.com/24x18/gb.png"></a>
+  <a href="news1-ge.html"><img src="https://flagcdn.com/24x18/ge.png"></a>
+</div>
+
+<header>
+  <a href="../en.html" style="display:flex;align-items:center;gap:10px;">
+    <img src="../assets/images/Geba logo picture.png" style="height:60px;">
+    <h1>Georgian Biotechnology Association</h1>
+  </a>
+  <nav>
+    <a href="news.html" class="active">News</a>
+  </nav>
+</header>
+
+<section class="news-article project-content">
+<h2>12th Helmholtz Diabetes Conference</h2>
+
+<p>Exciting news! Merab Sepashvili, a young member of GeBA, attended the 12th Helmholtz Diabetes Conference in Munich (Sept 22–24, 2025).</p>
+
+<p>As a PhD student at Tbilisi State University, Merab presented his ongoing research in the Applied Biomedicine and Biotechnology Laboratory, focusing on metabolic syndrome and non-alcoholic fatty liver disease. The conference unites leading scientists, clinicians, and industry experts from around the world, making it one of Europe’s top platforms for translational diabetes research.</p>
+
+<p>Wishing Merab and all the young researchers, members of Georgian Biotechnology Association, continued success in their scientific careers!</p>
+
+<p><a href="https://www.helmholtz-munich.de/.../diabetes-and-liver..." target="_blank"><strong>🔗 Link to Helmholtz Diabetes & Liver Research</strong></a></p>
+
+<img src="../assets/images/news/news1pic.jpg" class="proj-img">
+
+</section>
+</body>
+</html>

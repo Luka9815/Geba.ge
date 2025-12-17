@@ -46,10 +46,6 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
-main {
-  padding-top: 100px; /* adjust depending on header height */
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
@@ -433,3 +429,7 @@ header a:hover {
   color: white;
   text-decoration: none;
 }
+
+
+.brand-link{display:flex;align-items:center;gap:10px;color:inherit;text-decoration:none;}
+.brand-logo{height:60px;}

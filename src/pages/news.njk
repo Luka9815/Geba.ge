@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: "News | GEBA"
+lang: en
+nav_active: news
+alt_url_ka: "/pages/news-ge.html"
+permalink: "/pages/news.html"
+---
+<h2 style="text-align:center;margin-top:30px;">News</h2>
+<section class="news-grid">
+{% for item in collections.news | reverse %}
+  <div class="news-card">
+    {% if item.data.cover %}<img src="{{ item.data.cover }}" alt="{{ item.data.title_en | escape }}">{% endif %}
+    <h3>{{ item.data.title_en }}</h3>
+    <a class="btn" href="{{ item.data.permalink_en }}">Read More</a>
+  </div>
+{% endfor %}
+</section>

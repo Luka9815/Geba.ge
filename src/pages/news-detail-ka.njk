@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.news
+  size: 1
+  alias: item
+permalink: "{{ item.data.permalink_ka }}"
+title: "{{ item.data.title_ka }} | GEBA"
+lang: ka
+nav_active: news
+alt_url_en: "{{ item.data.permalink_en }}"
+---
+<section class="project-content">
+  <h2>{{ item.data.title_ka }}</h2>
+  {% if item.data.cover %}<img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_ka | escape }}">{% endif %}
+  <div class="richtext">{{ item.templateContent | safe }}</div>
+</section>

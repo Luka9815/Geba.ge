@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.projects
+  size: 1
+  alias: item
+permalink: "{{ item.data.permalink_en }}"
+title: "{{ item.data.title_en }} | GEBA"
+lang: en
+nav_active: projects
+alt_url_ka: "{{ item.data.permalink_ka }}"
+---
+<section class="project-content">
+  <h2>{{ item.data.title_en }}</h2>
+  {% if item.data.cover %}<img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_en | escape }}">{% endif %}
+  <p>{{ item.data.summary_en }}</p>
+  <div class="richtext">{{ item.templateContent | safe }}</div>
+</section>

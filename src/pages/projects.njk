@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: "Projects | GEBA"
+lang: en
+nav_active: projects
+alt_url_ka: "/pages/projects-ge.html"
+permalink: "/pages/projects.html"
+---
+<section class="page-title">
+  <h1>Our Projects</h1>
+  <p>Explore ongoing and completed initiatives supported by GeBA.</p>
+</section>
+<section class="projects-list">
+{% for item in collections.projects %}
+  <div class="project-card">
+    {% if item.data.cover %}<img src="{{ item.data.cover }}" alt="{{ item.data.title_en | escape }} cover">{% endif %}
+    <h3>{{ item.data.title_en }}</h3>
+    <p>{{ item.data.summary_en }}</p>
+    <a class="btn" href="{{ item.data.permalink_en }}">Read More</a>
+  </div>
+{% endfor %}
+</section>

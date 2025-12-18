@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "src/style.css": "style.css" });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });

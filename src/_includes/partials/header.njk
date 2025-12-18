@@ -1,0 +1,39 @@
+{% if lang == 'ka' %}
+<div class="lang-toggle" aria-label="Language toggle">
+  <a href="{{ alt_url_en }}"><img src="https://flagcdn.com/24x18/gb.png" alt="English"></a>
+  <a href="{{ page.url }}" class="active"><img src="https://flagcdn.com/24x18/ge.png" alt="Georgian"></a>
+</div>
+<header>
+  <a href="/index.html" class="brand-link">
+    <img src="/assets/images/Geba logo picture.png" class="brand-logo" alt="GeBA Logo">
+    <h1>საქართველოს ბიოტექნოლოგიის ასოციაცია</h1>
+  </a>
+  <nav class="ka-nav">
+    <a href="/index.html">მთავარი</a>
+    <a href="/index.html#about">ჩვენ შესახებ</a>
+    <a href="/pages/projects-ge.html"{% if nav_active=='projects' %} class="active"{% endif %}>პროექტები</a>
+    <a href="/pages/news-ge.html"{% if nav_active=='news' %} class="active"{% endif %}>სიახლეები</a>
+    <a href="/index.html#contact">კონტაქტი</a>
+    <a href="/pages/partners-ge.html"{% if nav_active=='partners' %} class="active"{% endif %}>პარტნიორები</a>
+  </nav>
+</header>
+{% else %}
+<div class="lang-toggle" aria-label="Language toggle">
+  <a href="{{ page.url }}" class="active"><img src="https://flagcdn.com/24x18/gb.png" alt="English"></a>
+  <a href="{{ alt_url_ka }}"><img src="https://flagcdn.com/24x18/ge.png" alt="Georgian"></a>
+</div>
+<header>
+  <a href="/en.html" class="brand-link">
+    <img src="/assets/images/Geba logo picture.png" class="brand-logo" alt="GeBA Logo">
+    <h1>Georgian Biotechnology Association</h1>
+  </a>
+  <nav>
+    <a href="/en.html">Home</a>
+    <a href="/en.html#about">About</a>
+    <a href="/pages/projects.html"{% if nav_active=='projects' %} class="active"{% endif %}>Projects</a>
+    <a href="/pages/news.html"{% if nav_active=='news' %} class="active"{% endif %}>News</a>
+    <a href="/en.html#contact">Contact</a>
+    <a href="/pages/partners.html"{% if nav_active=='partners' %} class="active"{% endif %}>Partners</a>
+  </nav>
+</header>
+{% endif %}

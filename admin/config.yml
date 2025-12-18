@@ -4,26 +4,27 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "assets/uploads"
+media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
   - name: "news"
     label: "News"
-    folder: "content/news"
+    folder: "src/content/news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title (EN)", name: "title_en", widget: "string" }
       - { label: "Title (KA)", name: "title_ka", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Cover image", name: "cover", widget: "image", required: false }
-      - { label: "Body (EN)", name: "body_en", widget: "markdown" }
-      - { label: "Body (KA)", name: "body_ka", widget: "markdown" }
+      - { label: "Permalink EN", name: "permalink_en", widget: "string" }
+      - { label: "Permalink KA", name: "permalink_ka", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "projects"
     label: "Projects"
-    folder: "content/projects"
+    folder: "src/content/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -32,5 +33,6 @@ collections:
       - { label: "Cover image", name: "cover", widget: "image", required: false }
       - { label: "Summary (EN)", name: "summary_en", widget: "text" }
       - { label: "Summary (KA)", name: "summary_ka", widget: "text" }
-      - { label: "Page content (EN)", name: "body_en", widget: "markdown" }
-      - { label: "Page content (KA)", name: "body_ka", widget: "markdown" }
+      - { label: "Permalink EN", name: "permalink_en", widget: "string" }
+      - { label: "Permalink KA", name: "permalink_ka", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

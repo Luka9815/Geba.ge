@@ -81,3 +81,7 @@ Facebook: საქართველოს ბიოტექნოლოგთ
 
 ვებსაიტს მართავს საქართველოს ბიოტექნოლოგთა ასოციაციის გუნდი.
 წვლილი, წინადადებები და შენიშვნები მიღებულია GitHub-ის pull request-ების ან ელ. ფოსტის საშუალებით.
+
+
+## Eleventy + Admin
+This repo includes an Eleventy (11ty) build (input: `src/`, output: `public/`) and a Decap CMS admin panel at `/admin/` (Netlify Identity + Git Gateway).

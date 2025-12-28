@@ -1,10 +1,12 @@
 /* =====================================================
-   GEBA – CLEAN PREMIUM STYLESHEET
-   Single source of truth for legacy + Eleventy pages
+   GEBA – PREMIUM + COMPAT CSS
+   Works for BOTH:
+   - Legacy pages (index.html/en.html/pages/*)
+   - Eleventy pages (src templates using .site-header)
    ===================================================== */
 
 /* -------------------------
-   Design tokens
+   Tokens
    ------------------------- */
 :root{
   --bg: #f6f8fb;
@@ -27,18 +29,11 @@
 }
 
 /* -------------------------
-   Reset & base
+   Base / Reset
    ------------------------- */
 *{ box-sizing: border-box; }
-
-html, body{
-  margin: 0;
-  padding: 0;
-}
-
-html{
-  scroll-behavior: smooth;
-}
+html, body{ margin: 0; padding: 0; }
+html{ scroll-behavior: smooth; }
 
 body{
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -50,26 +45,107 @@ body{
     var(--bg);
 }
 
-/* -------------------------
-   Layout helpers
-   ------------------------- */
+/* Container */
 .container{
   width: min(92vw, var(--container));
   margin-inline: auto;
-}
-
-main.content-wrap{
-  padding: 24px 0 64px;
+  padding: 0;
 }
 
 /* -------------------------
-   Header (premium)
+   HEADER – Legacy (<header>)
+   ------------------------- */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 0;
+}
+
+/* Georgian layout helpers that exist in your CSS already */
+.header-ge{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.logo-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.brand-logo{ height: 54px; width: auto; }
+.header-ge .logo-title h1{
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0;
+  color: rgba(15,27,45,.96);
+  font-weight: 800;
+  white-space: normal;
+}
+
+/* Make legacy header links not force-white */
+header a{
+  color: rgba(15,27,45,.90);
+  text-decoration: none;
+}
+header a:visited{ color: rgba(15,27,45,.90); }
+header a:hover{ color: rgba(15,27,45,.98); }
+
+/* Legacy nav (.main-nav) as pills */
+.main-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.main-nav a{
+  font-weight: 650;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background .15s ease, border-color .15s ease, transform .12s ease;
+}
+
+.main-nav a:hover{
+  background: rgba(10,147,150,.10);
+  border-color: rgba(10,147,150,.22);
+  transform: translateY(-1px);
+}
+
+/* Georgian nav helper (already referenced in your HTML) */
+.ka-nav{
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* -------------------------
+   HEADER – Eleventy (.site-header)
+   (If you later switch to templates, this still looks good)
    ------------------------- */
 .site-header{
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255,255,255,.78);
+  background: rgba(255,255,255,.82);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -79,12 +155,7 @@ main.content-wrap{
   grid-template-columns: 1fr auto auto;
   align-items: center;
   gap: 18px;
-  padding: 16px 0;
-  transition: padding .18s ease;
-}
-
-.site-header.is-scrolled .site-header__inner{
-  padding: 10px 0;
+  padding: 14px 0;
 }
 
 .brand{
@@ -93,34 +164,13 @@ main.content-wrap{
   gap: 12px;
   text-decoration: none;
   color: inherit;
-  min-width: 0;
 }
 
-.brand__logo{
-  height: 44px;
-  width: auto;
-  transition: height .18s ease;
-}
+.brand__logo{ height: 44px; width: auto; }
+.brand__title{ font-weight: 800; letter-spacing: -0.01em; }
+.brand__tagline{ color: var(--muted); font-size: 12px; }
 
-.site-header.is-scrolled .brand__logo{
-  height: 36px;
-}
-
-.brand__title{
-  font-weight: 700;
-  font-size: clamp(16px, 1.2vw + 12px, 20px);
-  line-height: 1.2;
-}
-
-.brand__tagline{
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 2px;
-}
-
-/* -------------------------
-   Navigation (pill style)
-   ------------------------- */
+/* Eleventy nav pills */
 .nav{
   display: flex;
   flex-wrap: wrap;
@@ -131,19 +181,18 @@ main.content-wrap{
 .nav a{
   text-decoration: none;
   color: rgba(15,27,45,.86);
-  font-weight: 600;
+  font-weight: 650;
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 999px;
   border: 1px solid transparent;
-  transition: background .15s ease,
-              border-color .15s ease,
-              color .15s ease;
+  transition: background .15s ease, border-color .15s ease, transform .12s ease;
 }
 
 .nav a:hover{
   background: rgba(10,147,150,.10);
   border-color: rgba(10,147,150,.22);
+  transform: translateY(-1px);
 }
 
 .nav a[aria-current="page"]{
@@ -152,8 +201,40 @@ main.content-wrap{
 }
 
 /* -------------------------
-   Language switch
+   Language switch (legacy .lang-toggle)
+   Keep it, but make it “clean”, not sticker-ish
    ------------------------- */
+.lang-toggle{
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  background: rgba(255,255,255,.85);
+  backdrop-filter: blur(8px);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  padding: 8px 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 2000;
+  border: 1px solid var(--border);
+}
+
+.lang-toggle img{
+  width: 24px;
+  height: 18px;
+  border-radius: 4px;
+  display: block;
+  transition: transform .12s ease;
+}
+
+.lang-toggle img:hover{ transform: translateY(-1px); }
+
+.lang-toggle .active img{
+  outline: 2px solid rgba(10,147,150,.35);
+  outline-offset: 2px;
+}
+
+/* Eleventy language switch (.lang) */
 .lang{
   display: inline-flex;
   align-items: center;
@@ -165,37 +246,9 @@ main.content-wrap{
   box-shadow: var(--shadow-sm);
 }
 
-.lang__sep{
-  width: 1px;
-  height: 18px;
-  background: var(--border);
-}
-
-.lang__btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 26px;
-  border-radius: 8px;
-  transition: transform .12s ease;
-}
-
-.lang__btn img{
-  width: 24px;
-  height: 18px;
-  border-radius: 4px;
-  display: block;
-}
-
-.lang__btn:hover{
-  transform: translateY(-1px);
-}
-
-.lang__btn.is-active{
-  outline: 2px solid rgba(10,147,150,.35);
-  outline-offset: 2px;
-}
+.lang__sep{ width: 1px; height: 18px; background: var(--border); }
+.lang__btn{ display: inline-flex; width: 34px; height: 26px; align-items: center; justify-content: center; border-radius: 8px; }
+.lang__btn img{ width: 24px; height: 18px; border-radius: 4px; display: block; }
 
 /* -------------------------
    Hero
@@ -203,30 +256,30 @@ main.content-wrap{
 .hero{
   width: 100%;
   aspect-ratio: 4 / 1;
-  background-image: url("/assets/images/hero.png");
+  background-image: url("assets/images/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* -------------------------
-   Sections & typography
+   Sections / Typography
    ------------------------- */
 section{
-  padding: 64px 0;
-  scroll-margin-top: 110px;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 56px 0;
+  scroll-margin-top: 120px;
 }
 
 section h2{
+  color: rgba(15,27,45,.96);
   font-size: clamp(22px, 2vw + 12px, 32px);
   margin: 0 0 18px;
   letter-spacing: -0.02em;
-  color: rgba(15,27,45,.96);
 }
 
-p{
-  color: rgba(15,27,45,.82);
-}
+p{ color: rgba(15,27,45,.82); }
 
 /* Lists */
 ul{
@@ -236,28 +289,117 @@ ul{
 }
 
 ul li{
-  position: relative;
   padding-left: 18px;
+  position: relative;
   margin-bottom: 10px;
 }
 
 ul li::before{
   content: "•";
+  color: var(--brand);
+  font-weight: 800;
   position: absolute;
   left: 0;
-  font-weight: 700;
-  color: var(--brand);
 }
 
 /* -------------------------
-   Cards
+   Cards / Grids (legacy pages use these)
    ------------------------- */
-.card{
+.projects-list,
+.news-grid{
+  max-width: var(--container);
+  margin: 40px auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.project-card,
+.news-card{
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  overflow: hidden;
   box-shadow: var(--shadow-md);
+  transition: transform .18s ease, box-shadow .18s ease;
 }
+
+.project-card:hover,
+.news-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 52px rgba(16,24,40,.16);
+}
+
+.project-card img,
+.news-card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3,
+.news-card h3{
+  margin: 14px 16px 8px;
+  font-size: 18px;
+  color: rgba(15,27,45,.96);
+}
+
+.project-card p{
+  margin: 0 16px 14px;
+}
+
+.project-card .button,
+.news-card .btn{
+  display: inline-block;
+  margin: 0 16px 16px;
+  background: rgba(0,95,115,.12);
+  color: rgba(0,95,115,.98);
+  padding: 9px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(0,95,115,.18);
+}
+
+.project-card .button:hover,
+.news-card .btn:hover{
+  background: rgba(0,95,115,.16);
+}
+
+/* Partner list */
+.partners-list{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0;
+}
+
+.partner-item{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(15,27,45,.08);
+}
+
+.partner-item img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  padding: 6px;
+  border: 1px solid rgba(15,27,45,.06);
+}
+
+.partner-item a{
+  font-size: 16px;
+  color: rgba(0,95,115,.98);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.partner-item a:hover{ text-decoration: underline; }
 
 /* -------------------------
    Footer
@@ -272,20 +414,24 @@ footer{
   letter-spacing: 0.2px;
 }
 
+footer a{ color: rgba(255,255,255,.92); }
+footer a:hover{ opacity: .9; }
+
 /* -------------------------
    Responsive
    ------------------------- */
 @media (max-width: 900px){
+  header .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0;
+  }
+
   .site-header__inner{
     grid-template-columns: 1fr;
     gap: 10px;
   }
 
-  .nav{
-    justify-content: flex-start;
-  }
-
-  .hero{
-    aspect-ratio: 16 / 9;
-  }
+  .hero{ aspect-ratio: 16 / 9; }
 }

@@ -1,8 +1,8 @@
 /* =====================================================
-   GEBA – PREMIUM + COMPAT CSS
-   Works for BOTH:
+   GEBA – PREMIUM + COMPAT (FULL FILE)
+   For BOTH:
    - Legacy pages (index.html/en.html/pages/*)
-   - Eleventy pages (src templates using .site-header)
+   - Eleventy pages (.site-header, .nav, .lang)
    ===================================================== */
 
 /* -------------------------
@@ -45,26 +45,42 @@ body{
     var(--bg);
 }
 
-/* Container */
+/* -------------------------
+   Container
+   ------------------------- */
 .container{
   width: min(92vw, var(--container));
   margin-inline: auto;
   padding: 0;
 }
 
-/* -------------------------
+/* =====================================================
    HEADER – Legacy (<header>)
-   ------------------------- */
+   Brand → Glass on scroll
+   (Requires script adding/removing header.is-scrolled)
+   ===================================================== */
 header{
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255,255,255,.82);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
+
+  /* Brand initial state */
+  background: linear-gradient(90deg, rgba(0,95,115,.98), rgba(10,147,150,.98));
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 10px 30px rgba(16,24,40,.14);
+
+  transition: background .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
+/* Scrolled → glass */
+header.is-scrolled{
+  background: rgba(255,255,255,.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15,27,45,.10);
+  box-shadow: 0 6px 20px rgba(16,24,40,.10);
+}
+
+/* Legacy header layout */
 header .container{
   display: flex;
   justify-content: space-between;
@@ -73,7 +89,7 @@ header .container{
   padding: 14px 0;
 }
 
-/* Georgian layout helpers that exist in your CSS already */
+/* Georgian header helpers */
 .header-ge{
   display: flex;
   flex-direction: column;
@@ -90,24 +106,39 @@ header .container{
 }
 
 .brand-logo{ height: 54px; width: auto; }
+
+/* Text colours adapt to header state */
+header a,
+header a:visited{
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+}
+
 .header-ge .logo-title h1{
+  margin: 0;
   font-size: 1.25rem;
   line-height: 1.25;
-  margin: 0;
-  color: rgba(15,27,45,.96);
   font-weight: 800;
+  color: rgba(255,255,255,.95);
   white-space: normal;
 }
 
-/* Make legacy header links not force-white */
-header a{
-  color: rgba(15,27,45,.90);
-  text-decoration: none;
-}
-header a:visited{ color: rgba(15,27,45,.90); }
-header a:hover{ color: rgba(15,27,45,.98); }
+header a:hover{ color: #ffffff; }
 
-/* Legacy nav (.main-nav) as pills */
+header.is-scrolled a,
+header.is-scrolled a:visited{
+  color: rgba(15,27,45,.90);
+}
+
+header.is-scrolled a:hover{
+  color: rgba(15,27,45,.98);
+}
+
+header.is-scrolled .header-ge .logo-title h1{
+  color: rgba(15,27,45,.96);
+}
+
+/* Legacy nav (.main-nav) pills that adapt */
 .main-nav{
   display: flex;
   flex-wrap: wrap;
@@ -115,22 +146,39 @@ header a:hover{ color: rgba(15,27,45,.98); }
   justify-content: center;
 }
 
+/* default (on teal) */
 .main-nav a{
   font-weight: 650;
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 999px;
-  border: 1px solid transparent;
-  transition: background .15s ease, border-color .15s ease, transform .12s ease;
+
+  border: 1px solid rgba(255,255,255,.22);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.92);
+
+  transition: background .15s ease, border-color .15s ease, color .15s ease, transform .12s ease;
 }
 
 .main-nav a:hover{
-  background: rgba(10,147,150,.10);
-  border-color: rgba(10,147,150,.22);
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.32);
   transform: translateY(-1px);
 }
 
-/* Georgian nav helper (already referenced in your HTML) */
+/* scrolled (on glass) */
+header.is-scrolled .main-nav a{
+  background: rgba(10,147,150,.10);
+  border-color: rgba(10,147,150,.22);
+  color: rgba(15,27,45,.90);
+}
+
+header.is-scrolled .main-nav a:hover{
+  background: rgba(10,147,150,.16);
+  border-color: rgba(10,147,150,.32);
+}
+
+/* Georgian nav helper present in your HTML */
 .ka-nav{
   justify-content: center;
   gap: 10px;
@@ -138,71 +186,7 @@ header a:hover{ color: rgba(15,27,45,.98); }
 }
 
 /* -------------------------
-   HEADER – Eleventy (.site-header)
-   (If you later switch to templates, this still looks good)
-   ------------------------- */
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255,255,255,.82);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-}
-
-.site-header__inner{
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  gap: 18px;
-  padding: 14px 0;
-}
-
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.brand__logo{ height: 44px; width: auto; }
-.brand__title{ font-weight: 800; letter-spacing: -0.01em; }
-.brand__tagline{ color: var(--muted); font-size: 12px; }
-
-/* Eleventy nav pills */
-.nav{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-}
-
-.nav a{
-  text-decoration: none;
-  color: rgba(15,27,45,.86);
-  font-weight: 650;
-  font-size: 14px;
-  padding: 8px 10px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: background .15s ease, border-color .15s ease, transform .12s ease;
-}
-
-.nav a:hover{
-  background: rgba(10,147,150,.10);
-  border-color: rgba(10,147,150,.22);
-  transform: translateY(-1px);
-}
-
-.nav a[aria-current="page"]{
-  background: rgba(0,95,115,.10);
-  border-color: rgba(0,95,115,.24);
-}
-
-/* -------------------------
    Language switch (legacy .lang-toggle)
-   Keep it, but make it “clean”, not sticker-ish
    ------------------------- */
 .lang-toggle{
   position: fixed;
@@ -234,7 +218,67 @@ header a:hover{ color: rgba(15,27,45,.98); }
   outline-offset: 2px;
 }
 
-/* Eleventy language switch (.lang) */
+/* =====================================================
+   Eleventy header support (optional future)
+   ===================================================== */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header__inner{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 0;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand__logo{ height: 44px; width: auto; }
+.brand__title{ font-weight: 800; letter-spacing: -0.01em; }
+.brand__tagline{ color: var(--muted); font-size: 12px; }
+
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.nav a{
+  text-decoration: none;
+  color: rgba(15,27,45,.86);
+  font-weight: 650;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background .15s ease, border-color .15s ease, transform .12s ease;
+}
+
+.nav a:hover{
+  background: rgba(10,147,150,.10);
+  border-color: rgba(10,147,150,.22);
+  transform: translateY(-1px);
+}
+
+.nav a[aria-current="page"]{
+  background: rgba(0,95,115,.10);
+  border-color: rgba(0,95,115,.24);
+}
+
 .lang{
   display: inline-flex;
   align-items: center;
@@ -303,7 +347,7 @@ ul li::before{
 }
 
 /* -------------------------
-   Cards / Grids (legacy pages use these)
+   Cards / Grids (legacy pages)
    ------------------------- */
 .projects-list,
 .news-grid{
@@ -367,7 +411,7 @@ ul li::before{
   background: rgba(0,95,115,.16);
 }
 
-/* Partner list */
+/* Partners */
 .partners-list{
   max-width: 900px;
   margin: 40px auto;

@@ -13,5 +13,11 @@ alt_url_en: "{{ item.data.permalink_en }}"
 <section class="project-content">
   <h2>{{ item.data.title_ka }}</h2>
   {% if item.data.cover %}<img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_ka | escape }}">{% endif %}
-  <div class="richtext">{{ item.templateContent | safe }}</div>
+  <div class="richtext">
+    {% if item.data.body_ka %}
+      {{ item.data.body_ka | safe }}
+    {% else %}
+      {{ item.templateContent | safe }}
+    {% endif %}
+  </div>
 </section>

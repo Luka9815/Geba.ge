@@ -7,7 +7,6 @@ date: 2025-07-15
 cover: /assets/images/news/news3.png
 permalink_en: /pages/news/biomedical-summer-school-batumi.html
 permalink_ka: /pages/news/biomedical-summer-school-batumi-ge.html
-body_en: '<img class="proj-img" src="/assets/images/news/news3.png"/>\n\n<p>
 
   Young members of the Georgian Biotechnology Association, doctoral students in Applied
   Biosciences and Biotechnology at Tbilisi State University, are participating in
@@ -16,7 +15,7 @@ body_en: '<img class="proj-img" src="/assets/images/news/news3.png"/>\n\n<p>
   school undergo specialized training in both theoretical and practical (laboratory)
   studies in the field of biomedical sciences.
 
-  </p>\n\n<p>
+  </p><p>
 
   Students have the opportunity to independently conduct laboratory work in the following
   areas: microbiology, immunochemistry, biochemistry, electrophoresis, and chromatography.
@@ -24,15 +23,13 @@ body_en: '<img class="proj-img" src="/assets/images/news/news3.png"/>\n\n<p>
   veterinary science, agriculture, biochemistry and biotechnology, food technology,
   and environmental protection.
 
-  </p>\n\n<img class="proj-img" src="/assets/images/news/news3.png"/>'
-body_ka: '<img class="proj-img" src="/assets/images/news/news3.png"/>\n\n<p>
 
   საქართველოს ბიოტექნოლოგიის ასოციაციის ახალგაზრდა წევრები, თბილისის სახელმწიფო უნივერსიტეტის
   გამოყენებითი ბიომეცნიერებებისა და ბიოტექნოლოგიის მიმართულების დოქტორანტები, მონაწილეობას
   იღებენ საერთაშორისო საზაფხულო სკოლაში, რომელიც ტარდება ბათუმში საქართველოს ტექნიკური
   უნივერსიტეტისა და ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტის ორგანიზებით.
 
-  </p>\n\n<p>
+  </p><p>
 
   საერთაშორისო სკოლის მონაწილეები გადიან სპეციალიზებულ თეორიულ და პრაქტიკულ (ლაბორატორიულ)
   სწავლებას ბიოსამედიცინო მიმართულებით. სტუდენტებს ეძლევათ შესაძლებლობა დამოუკიდებლად

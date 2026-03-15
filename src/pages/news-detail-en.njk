@@ -14,8 +14,11 @@ alt_url_ka: "{{ item.data.permalink_ka }}"
   <h2>{{ item.data.title_en }}</h2>
   {% if item.data.cover %}<img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_en | escape }}">{% endif %}
   <div class="richtext">
-    {% if item.data.body_en %}
-      {{ item.data.body_en | safe }}
+    {% set body = item.data.body_en | default("") %}
+    {% set placeholder = "(Write the article content here. You can include images via the CMS upload button.)" %}
+
+    {% if body and (body | trim) != placeholder %}
+      {{ body | safe }}
     {% else %}
       {{ item.templateContent | safe }}
     {% endif %}

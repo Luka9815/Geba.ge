@@ -17,6 +17,7 @@ permalink_ka: /pages/news/biomedical-summer-school-batumi-ge.html
 
   </p><p>
 
+
   Students have the opportunity to independently conduct laboratory work in the following
   areas: microbiology, immunochemistry, biochemistry, electrophoresis, and chromatography.
   The program is designed for students specializing in biotechnology, medicine, pharmacy,

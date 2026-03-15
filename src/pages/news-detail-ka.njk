@@ -12,10 +12,17 @@ alt_url_en: "{{ item.data.permalink_en }}"
 ---
 <section class="project-content">
   <h2>{{ item.data.title_ka }}</h2>
-  {% if item.data.cover %}<img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_ka | escape }}">{% endif %}
+
+  {% if item.data.cover %}
+    <img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_ka | escape }}">
+  {% endif %}
+
   <div class="richtext">
-    {% if item.data.body_ka %}
-      {{ item.data.body_ka | safe }}
+    {% set body = item.data.body_ka | default("") %}
+    {% set placeholder = "(Write the article content here. You can include images via the CMS upload button.)" %}
+
+    {% if body and (body | trim) != placeholder %}
+      {{ body | safe }}
     {% else %}
       {{ item.templateContent | safe }}
     {% endif %}

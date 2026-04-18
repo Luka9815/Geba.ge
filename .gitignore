@@ -6,3 +6,6 @@ public/
 
 # Claude Code
 .claude/
+
+# Superpowers brainstorming sessions
+.superpowers/

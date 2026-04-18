@@ -2,12 +2,15 @@
 title_en: "DINARA-WELWET"
 title_ka: "DINARA-WELWET"
 cover: "/assets/images/projects/project2cover.png"
+logo: "/assets/images/projects/dinara-welwet-logo.jpg"
 summary_en: "Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology"
 summary_ka: "ბიომრავალფეროვნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით"
 permalink_en: "/pages/dinara-welwet.html"
 permalink_ka: "/pages/dinara-welwet-ge.html"
 body_en: |
-  <p><strong>Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology</strong></p><p><em>ERASMUS-YOUTH-2025-CB (Grant Agreement – under preparation)</em></p><p>
+  <p><strong>Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology</strong></p>
+  <img src="/assets/images/projects/dinara-welwet-logo.jpg" alt="DINARA-WELWET" class="proj-img">
+  <p><em>ERASMUS-YOUTH-2025-CB (Grant Agreement – under preparation)</em></p><p>
   The DINARA-WELVET project addresses critical gaps in youth capacity building, digital skills, and employability in wildlife conservation, veterinary sciences, and One Health across Georgia, Ukraine, and Azerbaijan. Despite the increasing demand for trained professionals in biosecurity, biodiversity monitoring, and zoonotic disease prevention, young people in these fields struggle to access modern training, practical learning opportunities, and clear career pathways (FAO, 2021; OECD, 2023).
   </p><p>
   This disconnect between education and employment needs is limiting their ability to contribute effectively to conservation and public health efforts. DINARA-WELVET responds to this challenge with an innovative, hands-on, and technology-driven approach, aligning with Erasmus+ Capacity Building in Youth, the EU Youth Strategy (2019-2027), and the European Green Deal (European Commission, 2024).
@@ -19,7 +22,9 @@ body_en: |
   This initiative ensures long-term sustainability by bridging the gap between policy, education, and employment opportunities in conservation and public health (UNESCO, 2022).
   </p>
 body_ka: |
-  <p><strong>ბიომრავალფეროვნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით</strong></p><p><em>ERASMUS-YOUTH-2025-CB (დაფინანსების ხელშეკრულება — მზადების პროცესში)</em></p><p>
+  <p><strong>ბიომრავალფეროვნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით</strong></p>
+  <img src="/assets/images/projects/dinara-welwet-logo.jpg" alt="DINARA-WELWET" class="proj-img">
+  <p><em>ERASMUS-YOUTH-2025-CB (დაფინანსების ხელშეკრულება — მზადების პროცესში)</em></p><p>
   DINARA-WELVET პროექტი მიზნად ისახავს ახალგაზრდების შესაძლებლობების გაძლიერებას ველური ბუნების დაცვის, ვეტერინარიისა და One Health მიდგომის მიმართულებით საქართველოში, უკრაინასა და აზერბაიჯანში. მიუხედავად ბიოსაფრთხოების, ბიომრავალფეროვნების მონიტორინგისა და ზოონოზური დაავადებების პრევენციის სფეროში მზარდი მოთხოვნისა, ახალგაზრდებს ჯერ კიდევ შეზღუდული აქვთ წვდომა თანამედროვე განათლებაზე, პრაქტიკულ პლატფორმებსა და კარიერულ შესაძლებლობებზე (FAO, 2021; OECD, 2023).
   </p><p>
   ეს ბზარი განათლებასა და დასაქმების ბაზარს შორის ზღუდავს ახალგაზრდების შესაძლებლობას, ეფექტურად ჩაერთონ გარემოსა და საზოგადოებრივი ჯანმრთელობის დაცვაში. DINARA-WELVET პასუხობს ამ გამოწვევას ინოვაციური, პრაქტიკული და ტექნოლოგიებზე დაფუძნებული მიდგომით, რომელიც ეფუძნება Erasmus+ Capacity Building in Youth პროგრამას, ევროკავშირის ახალგაზრდულ სტრატეგიას (2019-2027) და ევროპის მწვანე კურსს (European Commission, 2024).

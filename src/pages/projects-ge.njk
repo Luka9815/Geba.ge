@@ -6,17 +6,38 @@ nav_active: projects
 alt_url_en: "/pages/projects.html"
 permalink: "/pages/projects-ge.html"
 ---
-<section class="page-title">
-  <h1>ჩვენი პროექტები</h1>
-  <p>იხილეთ მიმდინარე და დასრულებული პროექტები.</p>
-</section>
-<section class="projects-list">
-{% for item in collections.projects %}
-  <div class="project-card">
-    {% if item.data.cover %}<img src="{{ item.data.cover }}" alt="{{ item.data.title_ka | escape }} cover">{% endif %}
-    <h3>{{ item.data.title_ka }}</h3>
-    <p>{{ item.data.summary_ka }}</p>
-    <a class="btn" href="{{ item.data.permalink_ka }}">ვრცლად</a>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>ჩვენი პროექტები</h1>
+    <p>იხილეთ მიმდინარე და დასრულებული პროექტები.</p>
   </div>
-{% endfor %}
-</section>
+</div>
+
+<div class="projects-grid">
+  {% for item in collections.projects %}
+  <div class="project-card">
+    {% if item.data.logo %}
+      <div class="project-card-image project-card-image--logo">
+        <img src="{{ item.data.logo }}" alt="{{ item.data.title_ka | escape }}">
+      </div>
+    {% elif item.data.cover %}
+      <img src="{{ item.data.cover }}" alt="{{ item.data.title_ka | escape }}" class="project-card-image">
+    {% else %}
+      <div class="project-card-image {% if loop.index is odd %}teal-tint{% else %}red-tint{% endif %}">
+        {{ item.data.title_ka }}
+      </div>
+    {% endif %}
+    <div class="project-card-body">
+      {% if item.data.funder %}<p class="project-funder">{{ item.data.funder }}</p>{% endif %}
+      <h3 class="project-card-title">{{ item.data.title_ka }}</h3>
+      {% if item.data.status %}
+        <span class="project-card-status {% if item.data.status == 'active' %}status-active{% else %}status-completed{% endif %}">
+          {{ item.data.status | capitalize }}
+        </span>
+      {% endif %}
+      <p>{{ item.data.summary_ka }}</p>
+      <a class="project-read-more" href="{{ item.data.permalink_ka }}">ვრცლად →</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

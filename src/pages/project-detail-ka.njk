@@ -11,14 +11,8 @@ nav_active: projects
 alt_url_en: "{{ item.data.permalink_en }}"
 ---
 <section class="project-content">
-  <h2>{{ item.data.title_ka }}</h2>
-
   {% if item.data.cover %}
     <img src="{{ item.data.cover }}" class="proj-img" alt="{{ item.data.title_ka | escape }}">
-  {% endif %}
-
-  {% if item.data.summary_ka %}
-    <p>{{ item.data.summary_ka }}</p>
   {% endif %}
 
   <div class="richtext">

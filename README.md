@@ -27,7 +27,7 @@ Encourage young scientists and students through educational programs and network
 Email: info@geba.ge
  (update once available)
 
-Facebook: საქართველოს ბიოტექნოლოგთა ასოციაცია
+Facebook: საქართველოს ბიოტექნოლოგიის ასოციაცია
 
 Address: Tbilisi, Georgia
 
@@ -41,7 +41,7 @@ The website is built using HTML and CSS, and is hosted via GitHub Pages.
 This website is maintained by members of the Georgian Biotechnology Association.
 Contributions and suggestions are welcome via pull requests or by contacting the webmaster.
 
-საქართველოს ბიოტექნოლოგთა ასოციაცია (GEBA)
+საქართველოს ბიოტექნოლოგიის ასოციაცია (GEBA)
 
 ვებსაიტი: https://geba.ge
 
@@ -50,7 +50,7 @@ Contributions and suggestions are welcome via pull requests or by contacting the
 
 🧬 ასოციაციის შესახებ
 
-საქართველოს ბიოტექნოლოგთა ასოციაცია (GEBA) არის არაკომერციული ორგანიზაცია, რომელიც მიზნად ისახავს ბიოტექნოლოგიის განვითარების და პოპულარიზაციის ხელშეწყობას საქართველოში.
+საქართველოს ბიოტექნოლოგიის ასოციაცია (GEBA) არის არაკომერციული ორგანიზაცია, რომელიც მიზნად ისახავს ბიოტექნოლოგიის განვითარების და პოპულარიზაციის ხელშეწყობას საქართველოში.
 ჩვენი მისიაა გავაერთიანოთ მკვლევრები, სპეციალისტები, სტუდენტები და კომპანიები ბიოტექნოლოგიისა და მასთან დაკავშირებულ სფეროებში, ინოვაციების, განათლებისა და მდგრადი განვითარების გასაძლიერებლად.
 
 🌿 ჩვენი მიზნები
@@ -68,7 +68,7 @@ Contributions and suggestions are welcome via pull requests or by contacting the
 ელ. ფოსტა: info@geba.ge
  (დასამატებელია, როდესაც მზად იქნება)
 
-Facebook: საქართველოს ბიოტექნოლოგთა ასოციაცია
+Facebook: საქართველოს ბიოტექნოლოგიის ასოციაცია
 
 მისამართი: თბილისი, საქართველო
 

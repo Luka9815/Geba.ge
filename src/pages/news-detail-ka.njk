@@ -5,7 +5,8 @@ pagination:
   size: 1
   alias: item
 permalink: "{{ item.data.permalink_ka }}"
-title: "{{ item.data.title_ka }} | GEBA"
+eleventyComputed:
+  title: "{{ item.data.title_ka }} | GEBA"
 lang: ka
 nav_active: news
 alt_url_en: "{{ item.data.permalink_en }}"

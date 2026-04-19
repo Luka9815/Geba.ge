@@ -867,6 +867,14 @@ section { padding: 52px 24px; max-width: var(--container); margin: 0 auto; }
   display: block;
 }
 
+.proj-logo-float {
+  float: right;
+  max-width: 180px;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+}
+
 /* ============================================================
    CONTACT PAGE
 ============================================================ */

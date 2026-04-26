@@ -28,4 +28,17 @@ nav_active: news
       {{ item.templateContent | safe }}
     {% endif %}
   </div>
+
+  {% if item.data.gallery and item.data.gallery.length %}
+  <section class="post-gallery">
+    <h2>Gallery / გალერეა</h2>
+    <div class="gallery-grid">
+      {% for image in item.data.gallery %}
+      <a href="{{ image }}" class="glightbox">
+        <img src="{{ image }}" alt="Gallery image {{ loop.index }}">
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </section>

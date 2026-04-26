@@ -31,7 +31,7 @@ nav_active: news
 
   {% if item.data.gallery and item.data.gallery.length %}
   <section class="post-gallery">
-    <h2>Gallery / გალერეა</h2>
+    <h2>გალერეა</h2>
     <div class="gallery-grid">
       {% for image in item.data.gallery %}
       <a href="{{ image }}" class="glightbox">
@@ -39,6 +39,22 @@ nav_active: news
       </a>
       {% endfor %}
     </div>
+    {% if item.data.gallery | length > 6 %}
+    <button class="gallery-show-all">ყველა ფოტოს ჩვენება</button>
+    {% endif %}
   </section>
+  <script>
+  (function() {
+    var items = document.querySelectorAll('.gallery-grid a');
+    for (var i = 6; i < items.length; i++) { items[i].style.display = 'none'; }
+    var btn = document.querySelector('.gallery-show-all');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        for (var i = 6; i < items.length; i++) { items[i].style.display = ''; }
+        btn.remove();
+      });
+    }
+  })();
+  </script>
   {% endif %}
 </section>

@@ -1142,3 +1142,10 @@ section { padding: 52px 24px; max-width: var(--container); margin: 0 auto; }
   .wwd-section    { padding: 44px 16px; }
   .wwd-card       { flex: 0 0 100%; }
 }
+
+/* ── Gallery ──────────────────────────────────────────────── */
+.post-gallery { margin-top: 3rem; }
+.post-gallery h2 { margin-bottom: 1rem; font-size: 1.2rem; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px; }
+.gallery-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; cursor: pointer; border-radius: 3px; display: block; }
+.gallery-grid a:hover img { opacity: 0.85; }

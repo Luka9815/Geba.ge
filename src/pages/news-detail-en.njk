@@ -33,27 +33,44 @@ nav_active: news
   <section class="post-gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      {% for image in item.data.gallery %}
+      {% for image in item.data.gallery %}{% if loop.index <= 3 %}
       <a href="{{ image }}" class="glightbox">
         <img src="{{ image }}" alt="Gallery image {{ loop.index }}">
       </a>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
-    {% if item.data.gallery | length > 6 %}
-    <button class="gallery-show-all">Show all photos</button>
+    {% if item.data.gallery | length > 3 %}
+    <div class="gallery-extra">
+      {% for image in item.data.gallery %}{% if loop.index > 3 %}
+      <a href="{{ image }}" class="glightbox">
+        <img src="{{ image }}" alt="Gallery image {{ loop.index }}">
+      </a>
+      {% endif %}{% endfor %}
+    </div>
+    <button class="gallery-show-all"
+            data-show="Show all photos ({{ item.data.gallery | length }}) ↓"
+            data-hide="Show less ↑">Show all photos ({{ item.data.gallery | length }}) ↓</button>
     {% endif %}
   </section>
   <script>
   (function() {
-    var items = document.querySelectorAll('.gallery-grid a');
-    for (var i = 6; i < items.length; i++) { items[i].style.display = 'none'; }
     var btn = document.querySelector('.gallery-show-all');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        for (var i = 6; i < items.length; i++) { items[i].style.display = ''; }
-        btn.remove();
-      });
-    }
+    var extra = document.querySelector('.gallery-extra');
+    if (!btn || !extra) return;
+    btn.addEventListener('click', function() {
+      var isOpen = extra.classList.contains('open');
+      if (!isOpen) {
+        extra.classList.add('open');
+        extra.style.maxHeight = extra.scrollHeight + 'px';
+        btn.textContent = btn.dataset.hide;
+      } else {
+        extra.style.maxHeight = extra.scrollHeight + 'px';
+        void extra.offsetHeight;
+        extra.style.maxHeight = '0';
+        extra.classList.remove('open');
+        btn.textContent = btn.dataset.show;
+      }
+    });
   })();
   </script>
   {% endif %}

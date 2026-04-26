@@ -7,9 +7,9 @@ pagination:
 permalink: "{{ item.data.permalink_en }}"
 eleventyComputed:
   title: "{{ item.data.title_en }} | GEBA"
+  alt_url_ka: "{{ item.data.permalink_ka }}"
 lang: en
 nav_active: projects
-alt_url_ka: "{{ item.data.permalink_ka }}"
 ---
 <section class="project-content">
   {% if item.data.cover %}

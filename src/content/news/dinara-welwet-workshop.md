@@ -7,7 +7,6 @@ permalink_en: /pages/news/dinara-welwet-workshop.html
 permalink_ka: /pages/news/dinara-welwet-workshop-ge.html
 gallery:
   - /assets/images/news/dinara-welwet-workshop/img-01.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-02.jpg
   - /assets/images/news/dinara-welwet-workshop/img-03.jpg
   - /assets/images/news/dinara-welwet-workshop/img-04.jpg
   - /assets/images/news/dinara-welwet-workshop/img-05.jpg
@@ -15,25 +14,19 @@ gallery:
   - /assets/images/news/dinara-welwet-workshop/img-07.jpg
   - /assets/images/news/dinara-welwet-workshop/img-08.jpg
   - /assets/images/news/dinara-welwet-workshop/img-09.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-10.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-11.jpg
   - /assets/images/news/dinara-welwet-workshop/img-12.jpg
   - /assets/images/news/dinara-welwet-workshop/img-13.jpg
   - /assets/images/news/dinara-welwet-workshop/img-14.jpg
   - /assets/images/news/dinara-welwet-workshop/img-15.jpg
   - /assets/images/news/dinara-welwet-workshop/img-16.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-17.jpg
   - /assets/images/news/dinara-welwet-workshop/img-18.jpg
   - /assets/images/news/dinara-welwet-workshop/img-19.jpg
   - /assets/images/news/dinara-welwet-workshop/img-20.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-21.jpg
   - /assets/images/news/dinara-welwet-workshop/img-22.jpg
   - /assets/images/news/dinara-welwet-workshop/img-23.jpg
   - /assets/images/news/dinara-welwet-workshop/img-24.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-25.jpg
   - /assets/images/news/dinara-welwet-workshop/img-26.jpg
   - /assets/images/news/dinara-welwet-workshop/img-27.jpg
-  - /assets/images/news/dinara-welwet-workshop/img-28.jpg
   - /assets/images/news/dinara-welwet-workshop/img-29.jpg
   - /assets/images/news/dinara-welwet-workshop/img-30.jpg
   - /assets/images/news/dinara-welwet-workshop/img-31.jpg

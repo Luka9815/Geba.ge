@@ -1,4 +1,5 @@
 ---
+date: 2024-01-01
 title_en: "DINARA-WELWET"
 title_ka: "DINARA-WELWET"
 cover: "/assets/images/projects/project2cover.png"

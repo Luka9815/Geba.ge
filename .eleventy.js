@@ -22,7 +22,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("projects", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/content/projects/*.md");
+    return collectionApi.getFilteredByGlob("src/content/projects/*.md")
+      .sort((a, b) => (b.data.date || 0) - (a.data.date || 0));
   });
 
   return {

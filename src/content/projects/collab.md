@@ -1,4 +1,5 @@
 ---
+date: 2020-01-01
 title_en: "CoLLLab"
 title_ka: "CoLLLab"
 cover: "/assets/images/projects/Colllab cover.jpg"

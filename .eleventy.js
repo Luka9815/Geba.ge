@@ -5,6 +5,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
+  eleventyConfig.addFilter("dateGe", (value) => {
+    if (!value) return "";
+    const d = new Date(value);
+    if (isNaN(d)) return String(value);
+    return new Intl.DateTimeFormat("ka-GE", {
+      day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
+    }).format(d);
+  });
   eleventyConfig.addFilter("date", (value, fmt) => {
     if (!value) return "";
     const d = new Date(value);

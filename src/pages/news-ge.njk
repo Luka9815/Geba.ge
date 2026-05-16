@@ -23,7 +23,7 @@ permalink: "/pages/news-ge.html"
         <div class="news-card-img"></div>
       {% endif %}
       <div class="news-card-body">
-        {% if item.data.date %}<p class="news-date">{{ item.data.date | date("dd MMM yyyy") }}</p>{% endif %}
+        {% if item.data.date %}<p class="news-date">{{ item.data.date | dateGe }}</p>{% endif %}
         <p class="news-headline"><a href="{{ item.data.permalink_ka }}">{{ item.data.title_ka }}</a></p>
         <a class="news-read-more" href="{{ item.data.permalink_ka }}">ვრცლად →</a>
       </div>

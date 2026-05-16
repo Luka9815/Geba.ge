@@ -1,7 +1,7 @@
 ---
 title_en: "Prof. Dario Compagnone, Vice-Rector of the University of Teramo, Visited Tbilisi State University within the Erasmus+ Mobility Programme"
 title_ka: "ტერამოს უნივერსიტეტის ვიცე-რექტორის, პროფესორ დარიო კომპანიონეს ვიზიტი თბილისის სახელმწიფო უნივერსიტეტში Erasmus+ პროგრამის ფარგლებში"
-date: 2026-04-04
+date: 2026-05-04
 cover: /assets/images/news/dario-cover.jpg
 permalink_en: /pages/news/dario-compagnone-tsu-visit.html
 permalink_ka: /pages/news/dario-compagnone-tsu-visit-ge.html

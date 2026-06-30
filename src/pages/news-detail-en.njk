@@ -23,7 +23,7 @@ nav_active: news
     {% set placeholder = "(Write the article content here. You can include images via the CMS upload button.)" %}
 
     {% if body and (body | trim) != placeholder %}
-      {{ body | safe }}
+      {{ body | markdownify | safe }}
     {% else %}
       {{ item.templateContent | safe }}
     {% endif %}

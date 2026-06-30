@@ -24,6 +24,10 @@ module.exports = function (eleventyConfig) {
     return `${dd} ${mmm} ${yyyy}`;
   });
 
+  const markdownIt = require("markdown-it");
+  const mdLib = markdownIt({ html: true, linkify: true, breaks: false });
+  eleventyConfig.addFilter("markdownify", (content) => content ? mdLib.render(content) : "");
+
   eleventyConfig.addCollection("news", (collectionApi) => {
     return collectionApi.getFilteredByGlob("src/content/news/*.md")
       .sort((a,b)=> (a.data.date||0) - (b.data.date||0));

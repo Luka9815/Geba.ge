@@ -21,7 +21,7 @@ nav_active: projects
     {% set placeholder = "(Write the full project page content here.)" %}
 
     {% if body and (body | trim) != placeholder %}
-      {{ body | safe }}
+      {{ body | markdownify | safe }}
     {% else %}
       {{ item.templateContent | safe }}
     {% endif %}

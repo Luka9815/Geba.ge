@@ -1,38 +1,53 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Luka9815/Geba.ge
   branch: main
+  # base_url for the Cloudflare OAuth worker is added in a later auth phase
 
-publish_mode: editorial_workflow
-
-media_folder: "src/assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
 
 collections:
   - name: "news"
     label: "News"
+    label_singular: "News article"
     folder: "src/content/news"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.title_en}}"
+    summary: "{{fields.title_en}}"
     fields:
-      - { label: "Title (EN)", name: "title_en", widget: "string" }
-      - { label: "Title (KA)", name: "title_ka", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Title (English)", name: "title_en", widget: "string" }
+      - { label: "სათაური (ქართული)", name: "title_ka", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { label: "Cover image", name: "cover", widget: "image", required: false }
-      - { label: "Permalink EN", name: "permalink_en", widget: "string" }
-      - { label: "Permalink KA", name: "permalink_ka", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Gallery (optional)"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image" }
+      - { label: "Body (English)", name: "body_en", widget: "markdown" }
+      - { label: "ტექსტი (ქართული)", name: "body_ka", widget: "markdown" }
 
   - name: "projects"
     label: "Projects"
+    label_singular: "Project"
     folder: "src/content/projects"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.title_en}}"
+    summary: "{{fields.title_en}}"
     fields:
-      - { label: "Project name (EN)", name: "title_en", widget: "string" }
-      - { label: "Project name (KA)", name: "title_ka", widget: "string" }
+      - { label: "Project name (English)", name: "title_en", widget: "string" }
+      - { label: "პროექტის სახელი (ქართული)", name: "title_ka", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { label: "Cover image", name: "cover", widget: "image", required: false }
-      - { label: "Summary (EN)", name: "summary_en", widget: "text" }
-      - { label: "Summary (KA)", name: "summary_ka", widget: "text" }
-      - { label: "Permalink EN", name: "permalink_en", widget: "string" }
-      - { label: "Permalink KA", name: "permalink_ka", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Logo (optional)", name: "logo", widget: "image", required: false }
+      - { label: "Summary (English)", name: "summary_en", widget: "text" }
+      - { label: "მოკლე აღწერა (ქართული)", name: "summary_ka", widget: "text" }
+      - label: "Status (optional)"
+        name: "status"
+        widget: "select"
+        required: false
+        options: ["active", "completed"]
+      - { label: "Funder (optional)", name: "funder", widget: "string", required: false }
+      - { label: "Body (English)", name: "body_en", widget: "markdown" }
+      - { label: "ტექსტი (ქართული)", name: "body_ka", widget: "markdown" }

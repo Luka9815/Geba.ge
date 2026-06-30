@@ -1,6 +1,12 @@
 # GeBA.ge — Project context for Claude Code
 
-STATUS: Redesign implemented. Pending branch push and PR merge.
+STATUS: Redesign live. Admin panel migrated to Sveltia CMS (see below).
+
+## Admin panel status
+Migrated from Decap CMS / git-gateway to **Sveltia CMS** (GitHub backend, `repo: Luka9815/Geba.ge`).
+- Body fields are now bilingual markdown widgets (`body_en`, `body_ka`) rendered in templates via a `markdownify` filter added to `.eleventy.js` (markdown-it, `html: true` so existing raw-HTML articles pass through unchanged).
+- Article permalinks are auto-derived for new CMS-created entries via `src/content/news/news.11tydata.js` and `src/content/projects/projects.11tydata.js`; existing articles keep their explicit `permalink_en`/`permalink_ka` front-matter fields.
+- **Next pending phase — OAuth auth:** configure a Cloudflare Worker as the GitHub OAuth proxy and connect it to a shared GitHub OAuth app. The `base_url` comment placeholder is already in `src/admin/config.yml`. Not yet done.
 
 Repo: https://github.com/Luka9815/Geba.ge
 Live: https://geba.ge
@@ -119,7 +125,7 @@ src/
 ## Eleventy config notes
 - Input: `src/`, output: `public/`, includes: `src/_includes/`
 - Passthrough: style.css, assets/, admin/, CNAME
-- Custom filters: `limit(n)`, `date(fmt)` (fmt ignored — always outputs "dd MMM yyyy")
+- Custom filters: `limit(n)`, `date(fmt)` (fmt ignored — always outputs "dd MMM yyyy"), `markdownify` (markdown-it, html:true)
 - Do NOT modify .eleventy.js without checking passthrough copies
 
 ## Workflow
@@ -130,5 +136,5 @@ src/
 
 ## Do NOT change
 - URL structure / page paths
-- Admin panel / Decap CMS config (post-redesign)
+- Admin panel CMS config without understanding the Sveltia CMS + GitHub backend setup (see Admin panel status above)
 - GitHub Actions workflow

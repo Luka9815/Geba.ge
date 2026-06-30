@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Luka9815/Geba.ge
   branch: main
-  # base_url for the Cloudflare OAuth worker is added in a later auth phase
+  base_url: https://sveltia-cms-auth.luka-janjgavaa.workers.dev
 
 media_folder: "src/assets/images/uploads"
 public_folder: "/assets/images/uploads"

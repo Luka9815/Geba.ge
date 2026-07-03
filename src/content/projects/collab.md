@@ -1,13 +1,13 @@
 ---
+title_en: CoLLLab
+title_ka: CoLLLab
 date: 2020-01-01
-title_en: "CoLLLab"
-title_ka: "CoLLLab"
-cover: "/assets/images/projects/Colllab cover.jpg"
-summary_en: "Laboratory Health and Safety LLL courses for youth in West and East Georgia"
-summary_ka: "ლაბორატორიული ჯანმრთელობისა და უსაფრთხოების უწყვეტი განათლების კურსები ახალგაზრდებისთვის აღმოსავლეთ და დასავლეთ საქართველოში"
-permalink_en: "/pages/collab.html"
-permalink_ka: "/pages/collab-ge.html"
-body_en: |
+cover: /assets/images/projects/Colllab cover.jpg
+summary_en: Laboratory Health and Safety LLL courses for youth in West and East Georgia
+summary_ka: ლაბორატორიული ჯანმრთელობისა და უსაფრთხოების უწყვეტი განათლების კურსები ახალგაზრდებისთვის აღმოსავლეთ და დასავლეთ საქართველოში
+status: completed
+funder: ''
+body_en: |-
   <p>
   The <strong>Laboratory Health and Safety LLL Courses for Youth in West and East Georgia</strong> project (2020–2023) was implemented with the direct support of the <strong>European Union</strong> under the Jobs4Skills Programme (ENI/2020/417-316). 
   The initiative was led by a national consortium consisting of the <strong>Georgian Biotechnology Association (GeBA)</strong>, <strong>L. Sakvarelidze National Center for Disease Control and Public Health (NCDC)</strong>, 
@@ -37,7 +37,7 @@ body_en: |
   The initiative contributed to a <strong>safer and stronger laboratory environment</strong> in Georgia, expanded lifelong learning opportunities for youth, and strengthened cooperation between education, research, and the labor market. 
   As a result, many young professionals gained <strong>recognized qualifications</strong> and improved access to employment.
   </p><p><a href="https://www.facebook.com/watch/?v=396127272282718" rel="noopener noreferrer" target="_blank"><strong>🎥 Watch CoLLLab Project Video</strong></a></p>
-body_ka: |
+body_ka: |-
   <p>
   პროექტი <strong>„ლაბორატორიული ჯანმრთელობისა და უსაფრთხოების LLL კურსები ახალგაზრდებისთვის აღმოსავლეთ და დასავლეთ საქართველოში“</strong> (2020–2023) განხორციელდა 
   <strong>ევროკავშირის პირდაპირი მხარდაჭერით</strong> Jobs4Skills პროგრამის ფარგლებში (ENI/2020/417-316).
@@ -79,5 +79,6 @@ body_ka: |
   ახალგაზრდებისთვის უწყვეტი განათლების შესაძლებლობების ზრდას და განათლებისა და შრომის ბაზრის დაახლოებას. 
   ბევრმა ახალგაზრდამ მიიღო <strong>აღიარებული კვალიფიკაცია</strong> და გააუმჯობესა დასაქმების პერსპექტივები.
   </p><p><a href="https://www.facebook.com/watch/?v=396127272282718" rel="noopener noreferrer" target="_blank"><strong>🎥 ვიდეორგოლი - CoLLLab</strong></a></p>
+permalink_en: /pages/collab.html
+permalink_ka: /pages/collab-ge.html
 ---
-

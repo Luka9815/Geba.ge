@@ -1,14 +1,14 @@
 ---
+title_en: DINARA-WELWET
+title_ka: DINARA-WELWET
 date: 2024-01-01
-title_en: "DINARA-WELWET"
-title_ka: "DINARA-WELWET"
-cover: "/assets/images/projects/project2cover.png"
-logo: "/assets/images/projects/dinara-welwet-logo.jpg"
-summary_en: "Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology"
-summary_ka: "ველური ბუნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით"
-permalink_en: "/pages/dinara-welwet.html"
-permalink_ka: "/pages/dinara-welwet-ge.html"
-body_en: |
+cover: /assets/images/projects/project2cover.png
+logo: /assets/images/projects/dinara-welwet-logo.jpg
+summary_en: Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology
+summary_ka: ველური ბუნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით
+status: active
+funder: ''
+body_en: |-
   <img src="/assets/images/projects/dinara-welwet-logo.jpg" alt="DINARA-WELWET" class="proj-logo-center">
   <p><strong>Strengthening Youth Capacities in Wildlife Conservation Through One Health Initiatives and Virtual Reality Technology</strong></p>
   <p>
@@ -22,7 +22,7 @@ body_en: |
   </p><p>
   This initiative ensures long-term sustainability by bridging the gap between policy, education, and employment opportunities in conservation and public health (UNESCO, 2022).
   </p>
-body_ka: |
+body_ka: |-
   <img src="/assets/images/projects/dinara-welwet-logo.jpg" alt="DINARA-WELWET" class="proj-logo-center">
   <p><strong>ველური ბუნების დაცვაში ახალგაზრდების უნარების გაძლიერება ერთიანი ჯანმრთელობის მიდგომისა და ვირტუალური რეალობის ტექნოლოგიების გამოყენებით</strong></p>
   <p>
@@ -36,5 +36,6 @@ body_ka: |
   </p><p>
   პროექტი უზრუნველყოფს მდგრად შედეგებს პოლიტიკის, განათლებისა და დასაქმების პლატფორმების დაკავშირებით და ხელს უწყობს ახალგაზრდული ლიდერობის განვითარებას ბიომრავალფეროვნების დაცვასა და გარემოსდაცვით უსაფრთხოებაში (UNESCO, 2022).
   </p>
+permalink_en: /pages/dinara-welwet.html
+permalink_ka: /pages/dinara-welwet-ge.html
 ---
-

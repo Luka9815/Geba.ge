@@ -32,7 +32,7 @@ permalink: "/pages/projects-ge.html"
       <h3 class="project-card-title">{{ item.data.title_ka }}</h3>
       {% if item.data.status %}
         <span class="project-card-status {% if item.data.status == 'active' %}status-active{% else %}status-completed{% endif %}">
-          {{ item.data.status | capitalize }}
+          {% if item.data.status == 'active' %}მიმდინარე{% else %}დასრულებული{% endif %}
         </span>
       {% endif %}
       <p>{{ item.data.summary_ka }}</p>

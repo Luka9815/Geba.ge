@@ -4,8 +4,10 @@ STATUS: Redesign live. Admin panel migrated to Sveltia CMS (see below).
 
 ## Admin panel status
 Migrated from Decap CMS / git-gateway to **Sveltia CMS** (GitHub backend, `repo: Luka9815/Geba.ge`).
-- Body fields are now bilingual markdown widgets (`body_en`, `body_ka`) rendered in templates via a `markdownify` filter added to `.eleventy.js` (markdown-it, `html: true` so existing raw-HTML articles pass through unchanged).
+- Body fields are now bilingual markdown widgets (`body_en`, `body_ka`) rendered in templates via a `markdownify` filter added to `.eleventy.js` (markdown-it, `html: true`, `breaks: true` so existing raw-HTML articles pass through unchanged and a single Enter in the editor becomes a line break).
 - Article permalinks are auto-derived for new CMS-created entries via `src/content/news/news.11tydata.js` and `src/content/projects/projects.11tydata.js`; existing articles keep their explicit `permalink_en`/`permalink_ka` front-matter fields.
+- Gallery field (news + projects) is a single `image` widget with `multiple: true` (was a `list` widget with a nested `image` field) — lets editors bulk-select/upload many images at once. Stored data is a flat array of path strings either way, so this was a config-only change; no template or content migration needed.
+- Sveltia CMS is loaded unpinned from `https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js` (no version in the URL), so it always resolves to the latest published build.
 - **Next pending phase — OAuth auth:** configure a Cloudflare Worker as the GitHub OAuth proxy and connect it to a shared GitHub OAuth app. The `base_url` comment placeholder is already in `src/admin/config.yml`. Not yet done.
 
 Repo: https://github.com/Luka9815/Geba.ge
@@ -125,8 +127,13 @@ src/
 ## Eleventy config notes
 - Input: `src/`, output: `public/`, includes: `src/_includes/`
 - Passthrough: style.css, assets/, admin/, CNAME
-- Custom filters: `limit(n)`, `date(fmt)` (fmt ignored — always outputs "dd MMM yyyy"), `markdownify` (markdown-it, html:true)
+- Custom filters: `limit(n)`, `date(fmt)` (fmt ignored — always outputs "dd MMM yyyy"), `markdownify` (markdown-it, html:true, breaks:true)
 - Do NOT modify .eleventy.js without checking passthrough copies
+
+## Article body rendering (`.richtext`, news/project detail pages)
+- Container: `.richtext` div wrapping `{{ body_en/body_ka | markdownify | safe }}` in `src/pages/news-detail-*.njk` and `project-detail-*.njk`.
+- The global reset (`* { margin: 0 }`) strips paragraph spacing by default, so `.richtext p` gets an explicit `margin-bottom: 1em`; `.richtext ul/ol/li` get spacing + indentation. Scoped to `.richtext` only — don't remove the reset or these rules elsewhere.
+- CMS editors should write real Markdown lists (`- item`) for bullets, not literal "•" characters — with `breaks: true`, those would otherwise collapse onto one line-broken paragraph instead of a `<ul>`.
 
 ## Workflow
 - Always commit to a NEW branch, never directly to main

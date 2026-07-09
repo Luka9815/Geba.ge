@@ -18,10 +18,11 @@ body_en: |-
 
 
   **The workshop focused on:**
-  • Identifying the key barriers, skills gaps, and opportunities for young people in the field of wildlife conservation;
-  • Sharing experiences in education, training, and professional practice related to the project's thematic areas;
-  • Discussing the development of project outputs and the establishment of **Youth Research Teams**;
-  • Exploring innovative educational approaches, including the integration of **Virtual Reality (VR)** technologies into One Health and wildlife conservation training.
+
+  - Identifying the key barriers, skills gaps, and opportunities for young people in the field of wildlife conservation;
+  - Sharing experiences in education, training, and professional practice related to the project's thematic areas;
+  - Discussing the development of project outputs and the establishment of **Youth Research Teams**;
+  - Exploring innovative educational approaches, including the integration of **Virtual Reality (VR)** technologies into One Health and wildlife conservation training.
 
 
   We sincerely thank our project partners for their warm hospitality, excellent organization, and productive discussions. We look forward to continuing our collaboration in developing innovative educational resources that will empower young people with the knowledge, practical skills, and digital competencies needed to become future professionals in **One Health**, biodiversity conservation, and environmental sustainability.
@@ -34,10 +35,11 @@ body_ka: |-
   სემინარმა შესანიშნავი პლატფორმა შექმნა ცოდნის გაზიარების, გამოცდილების გაცვლისა და საერთაშორისო თანამშრომლობის გასაძლიერებლად. ეს იყო შთამაგონებელი და უაღრესად ნაყოფიერი შეხვედრა, რომელმაც პროექტის სამომავლო საქმიანობისთვის ღირებული იდეები წარმოშვა.
 
   **სემინარის მთავარი მიმართულებები იყო:**
-  • ველური ბუნების დაცვის სფეროში ახალგაზრდებისთვის არსებული ძირითადი ბარიერების, უნარების ხარვეზებისა და შესაძლებლობების გამოვლენა;
-  • პროექტის თემატურ სფეროებთან დაკავშირებული განათლების, ტრენინგისა და პროფესიული პრაქტიკის გამოცდილების გაზიარება;
-  • პროექტის შედეგების შემუშავებისა და **ახალგაზრდული კვლევითი ჯგუფების (Youth Research Teams)** ჩამოყალიბების განხილვა;
-  • ინოვაციური საგანმანათლებლო მიდგომების შესწავლა, მათ შორის **ვირტუალური რეალობის (VR)** ტექნოლოგიების ინტეგრირება ერთიანი ჯანმრთელობისა და ველური ბუნების დაცვის ტრენინგებში.
+
+  - ველური ბუნების დაცვის სფეროში ახალგაზრდებისთვის არსებული ძირითადი ბარიერების, უნარების ხარვეზებისა და შესაძლებლობების გამოვლენა;
+  - პროექტის თემატურ სფეროებთან დაკავშირებული განათლების, ტრენინგისა და პროფესიული პრაქტიკის გამოცდილების გაზიარება;
+  - პროექტის შედეგების შემუშავებისა და **ახალგაზრდული კვლევითი ჯგუფების (Youth Research Teams)** ჩამოყალიბების განხილვა;
+  - ინოვაციური საგანმანათლებლო მიდგომების შესწავლა, მათ შორის **ვირტუალური რეალობის (VR)** ტექნოლოგიების ინტეგრირება ერთიანი ჯანმრთელობისა და ველური ბუნების დაცვის ტრენინგებში.
 
   მადლობას ვუხდით პროექტის პარტნიორებს თბილი მასპინძლობის, შესანიშნავი ორგანიზებისა და ნაყოფიერი დისკუსიებისთვის. მოუთმენლად ველით თანამშრომლობის გაგრძელებას ისეთი ინოვაციური საგანმანათლებლო რესურსების შემუშავებაში, რომლებიც ახალგაზრდებს შესძენს იმ ცოდნას, პრაქტიკულ უნარებსა და ციფრულ კომპეტენციებს, რაც მათ **ერთიანი ჯანმრთელობის (One Health)**, ბიომრავალფეროვნების დაცვისა და გარემოს მდგრადობის სფეროებში მომავალ პროფესიონალებად ჩამოსაყალიბებლად სჭირდებათ.
 

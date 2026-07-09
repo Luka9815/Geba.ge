@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
   });
 
   const markdownIt = require("markdown-it");
-  const mdLib = markdownIt({ html: true, linkify: true, breaks: false });
+  const mdLib = markdownIt({ html: true, linkify: true, breaks: true });
   eleventyConfig.addFilter("markdownify", (content) => content ? mdLib.render(content) : "");
 
   eleventyConfig.addCollection("news", (collectionApi) => {

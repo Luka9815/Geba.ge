@@ -11,11 +11,18 @@ gallery:
   - /assets/images/uploads/20260526_121508.jpg
   - /assets/images/uploads/20260526_121638.jpg
   - /assets/images/uploads/prague cover.jpg
+  - /assets/images/uploads/as.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 16.33.12.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 16.33.13.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 16.36.33.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 17.25.08.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 17.44.27.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05-27 at 17.44.28.jpeg
+  - /assets/images/uploads/WhatsApp Image 2026-05a-27 at 17.25.08.jpeg
 body_en: |-
   Recently, three representatives of the **Georgian Biotechnology Association (GeBA)** participated in the international **DINARA-WELWET** workshop held in **Prague, Czech Republic**. The event brought together project partners to address key challenges in **wildlife conservation** through the **One Health** approach and innovative digital technologies.
 
   The workshop provided an excellent platform for exchanging knowledge, sharing experiences, and strengthening international collaboration. It was an inspiring and highly productive meeting that generated valuable ideas for the project's future activities.
-
 
   **The workshop focused on:**
 
@@ -24,9 +31,7 @@ body_en: |-
   - Discussing the development of project outputs and the establishment of **Youth Research Teams**;
   - Exploring innovative educational approaches, including the integration of **Virtual Reality (VR)** technologies into One Health and wildlife conservation training.
 
-
   We sincerely thank our project partners for their warm hospitality, excellent organization, and productive discussions. We look forward to continuing our collaboration in developing innovative educational resources that will empower young people with the knowledge, practical skills, and digital competencies needed to become future professionals in **One Health**, biodiversity conservation, and environmental sustainability.
-
 
   The workshop was organized within the framework of the **DINARA-WELWET** project, _"Strengthening Youth Capacities in Wildlife Conservation through One Health Initiatives and Virtual Reality Technology,"_ co-funded by the **European Union**.
 body_ka: |-

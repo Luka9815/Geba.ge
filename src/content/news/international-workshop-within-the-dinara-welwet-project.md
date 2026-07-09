@@ -16,7 +16,7 @@ body_en: |-
 
   The workshop provided an excellent platform for exchanging knowledge, sharing experiences, and strengthening international collaboration. It was an inspiring and highly productive meeting that generated valuable ideas for the project's future activities.
 
-  **The workshop focused on:**
+  **The workshop focused oan:**
   • Identifying the key barriers, skills gaps, and opportunities for young people in the field of wildlife conservation;
   • Sharing experiences in education, training, and professional practice related to the project's thematic areas;
   • Discussing the development of project outputs and the establishment of **Youth Research Teams**;

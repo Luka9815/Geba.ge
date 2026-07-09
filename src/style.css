@@ -1156,6 +1156,7 @@ section { padding: 52px 24px; max-width: var(--container); margin: 0 auto; }
 
 /* ── Rich text body (news & project detail pages) ─────────── */
 .richtext p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; margin-bottom: 1em; }
-.richtext ul, .richtext ol { margin: 0 0 1em; padding-left: 1.5em; }
+.richtext ul { list-style: disc outside; margin: 0 0 1em; padding-left: 1.5em; }
+.richtext ol { list-style: decimal outside; margin: 0 0 1em; padding-left: 1.5em; }
 .richtext li { margin-bottom: 0.4em; }
 .gallery-show-all:hover { background: var(--accent); color: var(--white); transform: translateY(-1px); }

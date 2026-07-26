@@ -136,9 +136,8 @@ src/
 - CMS editors should write real Markdown lists (`- item`) for bullets, not literal "•" characters — with `breaks: true`, those would otherwise collapse onto one line-broken paragraph instead of a `<ul>`.
 
 ## Workflow
-- Always commit to a NEW branch, never directly to main
-- Luka merges the PR manually on GitHub
-- GitHub Actions deploys on merge (~30 seconds)
+- Commit directly to main, no PR branches
+- GitHub Actions deploys on push to main (~30 seconds)
 - Local preview: npm run serve at localhost:8080
 
 ## Do NOT change

@@ -38,6 +38,17 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => (b.data.date || 0) - (a.data.date || 0));
   });
 
+  // Pasted Word/web content (via the CMS) can carry non-breaking spaces,
+  // which stretch short justified lines edge-to-edge. Strip both forms
+  // from rendered HTML so this can't be reintroduced by future pastes.
+  eleventyConfig.addTransform("stripNbsp", (content, outputPath) => {
+    if (outputPath && outputPath.endsWith(".html")) {
+      const nbsp = new RegExp(String.fromCharCode(160), "g");
+      return content.replace(/&nbsp;/gi, " ").replace(nbsp, " ");
+    }
+    return content;
+  });
+
   return {
     dir: { input: "src", output: "public", includes: "_includes" }
   };

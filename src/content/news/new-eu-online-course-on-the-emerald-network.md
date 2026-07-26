@@ -20,7 +20,8 @@ body_en: |-
 
   We encourage you to take advantage of this opportunity to build your knowledge, strengthen your professional skills, and support the effective conservation and management of Emerald Network sites. We also invite you to share this course with colleagues who may be interested.
 body_ka: |-
-  მოხარული ვართ გაცნობოთ, რომ [ევროკავშირი გარემოსთვის პროგრამის](https://www.eu4environment.org/)  ფარგლებში დაიწყო ახალი ონლაინ კურსი, [ზურმუხტის ქსელი: სამართლებრივი ჩარჩოებიდან საზოგადოების ჩართულობამდე](https://www.eu4environment.org/ka/news/%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C-%E1%83%A1%E1%83%90%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%9D-%E1%83%99%E1%83%A3%E1%83%A0%E1%83%A1%E1%83%98-%E1%83%96/).
+  მოხარული ვართ გაცნობოთ, რომ [ევროკავშირი გარემოსთვის პროგრამის](https://www.eu4environment.org/)  ფარგლებში დაიწყო ახალი ონლაინ კურსი, 
+  [ზურმუხტის ქსელი: სამართლებრივი ჩარჩოებიდან საზოგადოების ჩართულობამდე](https://www.eu4environment.org/ka/news/%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C-%E1%83%A1%E1%83%90%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%9D-%E1%83%99%E1%83%A3%E1%83%A0%E1%83%A1%E1%83%98-%E1%83%96/).
 
   ეს კურსი დაეხმარება მონაწილეებს გაიღრმავონ ცოდნა ზურმუხტის ქსელის (შესახებ და უკეთ გაიაზრონ მისი როლი ბიომრავალფეროვნების დაცვაში.
 
